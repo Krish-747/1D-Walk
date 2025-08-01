@@ -1,13 +1,13 @@
 import random
 
-lenth = 20
+length_of_array = 20
 default_value = 5000
 
 
-arraya = [0] * (lenth - int(lenth/2))
+og_array = [0] * (length_of_array - int(length_of_array/2))
 
-for i in range(int(lenth/2)):
-    arraya.append(default_value)
+for i in range(int(length_of_array/2)):
+    og_array.append(default_value)
 
 
 def repeat_again(given_array):
@@ -23,18 +23,18 @@ def repeat_again(given_array):
 
 
 while True:
-    newarray = [0] * lenth
-    for ind in range(lenth):
-        for ball in range(arraya[ind]):
+    newarray = [0] * length_of_array
+    for ind in range(length_of_array):
+        for ball in range(og_array[ind]):
             a = random.randint(0, 1)
-            b = arraya[ind]
+            b = og_array[ind]
 
             if ind == 0:
                 if a == 1:
                     newarray[ind + 1] += 1
                 else:
                     newarray[ind] += 1
-            elif ind == lenth - 1:
+            elif ind == length_of_array - 1:
                 if a == 0:
                     newarray[ind - 1] += 1
                 else:
@@ -45,9 +45,9 @@ while True:
                 else:
                     newarray[ind + 1] += 1
 
-    arraya = newarray
-    print(arraya)
+    og_array = newarray
+    print(og_array)
 
-    if not repeat_again(arraya):
+    if not repeat_again(og_array):
         break
 

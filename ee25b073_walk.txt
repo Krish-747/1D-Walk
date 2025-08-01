@@ -3,9 +3,9 @@
 Define variable length = 20
 Define variable default_value = 5000
 
-Define array called arraya
-Fill first half of arraya with 0
-Fill second half of arraya with default_value
+Define array called og_array
+Fill first half of og_array with 0
+Fill second half of og_array with default_value
 
 Define function repeat_again(given_array):
     Calculate the average of given_array and store it in mean
@@ -18,7 +18,7 @@ Repeat the following steps forever:
     Define new array called newarray with 20 zeroes
 
     For each index from 0 to length - 1:
-        For each ball (from 0 to arraya[index]):
+        For each ball (from 0 to og_array[index]):
             Pick a random number a (either 0 or 1)
 
             If index is the first position (0):
@@ -33,10 +33,10 @@ Repeat the following steps forever:
                 If a is 0, increase newarray[index - 1] by 1
                 Else, increase newarray[index + 1] by 1
 
-    Set arraya = newarray
-    Print arraya
+    Set og_array = newarray
+    Print og_array
 
-    If repeat_again(arraya) is False:
+    If repeat_again(og_array) is False:
         Break the loop
 
-Print the final arraya
+Print the final og_array

@@ -1,2 +1,2 @@
 # 1D Walk
-This program simulates a one-dimensional random walk, where a bunch of particles move randomly along a line. The particles can either move left or right with equal probability, and the program displays their position using an array.
+This program simulates a one-dimensional random walk, where a bunch of particles move randomly along a line. The particles can either move left or right with equal probability, and the program displays their position using an array. The program stops when the distribution is within a 10% tolerance of the expected distribution.
